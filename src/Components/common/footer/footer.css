@@ -1,0 +1,16 @@
+footer{
+
+    background-color: #150461;
+    padding: 10px;
+}
+footer li {
+    margin-right: 40px;
+  }
+  footer ul {
+    padding: 30px 20px;
+  }
+  footer ul li a {
+    color: black;
+    font-weight: 500;
+    transition: 0.5s;
+  }

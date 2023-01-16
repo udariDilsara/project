@@ -1,0 +1,122 @@
+.row .leftImage{
+  
+    height: 400px;
+    width: 400px;
+    border: solid yellow;
+    border-radius: 50%;
+    margin: 20px 100px;
+    display: flex;
+   
+   }
+   .hProgramImg{
+    
+    width: 200px;
+    border-radius: 3rem;
+    
+
+   }
+   .hProgramImg:hover{
+    background-color: rgb(158, 158, 223);
+   }
+ 
+   .hProgramImg .button button{
+    margin-left: 40px;
+   }
+
+   
+   .grid3 .hProgramImg img{
+    height: 200px;
+    width: 200px;
+    
+    border-radius: 3rem;
+    padding: auto;
+    display: flex;
+   }
+
+   .grid3 .hProgramImg h1{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin: 5px;
+    
+   }
+   .grid3 .hProgramImg h1 a{
+    color: rgb(41, 38, 38);
+    font-size: 20px;
+   }
+   .grid3{
+    padding: 10px;
+    border: blue;
+    border-radius: 3rem;
+    background-color: white;
+    margin: 5px;
+   }
+  .grid .hblogImage img{
+    height: 250px;
+    width: 250px;
+    border-radius: 3rem;
+    padding: auto;
+    display: flex;
+  }
+
+
+  .online {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+  }
+  .online .box {
+    box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+    background-color: #fff;
+    padding: 30px 5px;
+    transition: 0.5s;
+  }
+  .online .box .iconRound{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #1eb2a6;
+    padding: 5px;
+    margin-left: 25px;
+  }
+  .online .img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    position: relative;
+  }
+  .online img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .online h1 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 30px;
+    color:#3727b3;
+  }
+  .online span {
+    
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #6155b9;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .online .box:hover {
+    background-color: #aba2da;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .online .box:hover h1 {
+    color: #fff;
+  }
+  /*-------------online---------*/
+  @media screen and (max-width: 768px) {
+  }
