@@ -34,7 +34,7 @@ const Header = () => {
               <Link to='/contact'>Contact</Link>
             </li>
 
-            <li><button ><Link to='/loginPage'>SIGN IN</Link></button></li>
+            <li><button ><Link to='/login'>SIGN IN</Link></button></li>
           </ul>
          
             
