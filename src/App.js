@@ -11,7 +11,13 @@ import Footer from './Components/common/footer/Footer'
 
 import {LoginPage} from './Components/login/LoginPage'
 import {Register} from './Components/login/Register'
-import Admin from './Components/admin/Admin'
+import Admin from './Components/users/admin'
+import activityBox from './Components/users/Admin/activityBox'
+import childBox from './Components/users/Admin/childBox'
+import userBox from "./Components/users/Admin/userBox"
+import staffBox from './Components/users/Admin/staffBox'
+import paymentBox from './Components/users/Admin/paymentBox'
+import classBox from './Components/users/Admin/classBox'
 
 const App = () => {
   
@@ -28,6 +34,12 @@ const App = () => {
           <Route path='/register' exact component={Register}/>
           <Route path='/login' exact component={LoginPage}/>
           <Route path='/admin' exact component={Admin}/>
+          <Route path='/activityBox' exact component={activityBox}/>
+          <Route path='/childBox' exact component={childBox}/>
+          <Route path='/userBox' exact component={userBox}/>
+          <Route path='/staffBox' exact component={staffBox}/>
+          <Route path='/classBox' exact component={classBox}/>
+          <Route path='/paymentBox' exact component={paymentBox}/>
          
       </Switch>
       <Footer/>

@@ -3,7 +3,7 @@ import axios from "axios";
 import './Login.css';
 import { Link } from "react-router-dom";
 
-export const Register = (props) => {
+export const Register = () => {
     const [firstname,setFirstName]= useState('');
     const [lastname,setLastName]= useState('');
     const [role,setRole]= useState('');
