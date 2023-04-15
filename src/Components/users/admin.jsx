@@ -1,33 +1,36 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import { Link } from "react-router-dom"
 
 function admin() {
   return (
     <div className='App'>
-            <div className='container'>
-            <div name ="user">
-                <h2>User</h2>
-                <div name = "admin"></div>
-                <div name = "childMinder"></div>
-                <div name = "guardian"></div>
-            </div>
-            <div name = "staff">
-                <h2><Link to = './staffBox'>Staff</Link></h2>
-            </div>
-            <div name = "class">
-                <h2>Class</h2>
-            </div>
-            <div name = "child">
-                <h2>Child</h2>
-            </div>
-            <div name="activity">
-                <h2>Activity</h2>
-            </div>
-            <div name ="payment">
-                <h2>Payment</h2>
-            </div>
-            </div>
         
+            <div className='container'>
+            {<h2>Admin Dashborad</h2> }
+            <div name ="user">
+                {/* <h2>User</h2> */}
+                <Button variant="light"><Link to = './userBox'>User</Link></Button>
+                
+            </div>
+            <br/>
+            <div name = "staff">
+            <Button variant="light"><Link to = './staffBox'>Staff</Link></Button>
+            </div><br/>
+            <div name = "class">
+            <Button variant="light"><Link to = './classBox'>Class</Link></Button>
+            </div><br/>
+            <div name = "child">
+            <Button variant="light"><Link to = './childBox'>Child</Link></Button>
+            </div><br/>
+            <div name="activity">
+            <Button variant="light"><Link to = './activityBox'>Activity</Link></Button>
+            </div><br/>
+            <div name ="payment">
+            <Button variant="light"><Link to = './paymentBox'>Payment</Link></Button>
+            </div>
+            </div>
+                
     </div>
   )
 }

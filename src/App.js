@@ -14,10 +14,11 @@ import {Register} from './Components/login/Register'
 import Admin from './Components/users/admin'
 import activityBox from './Components/users/Admin/activityBox'
 import childBox from './Components/users/Admin/childBox'
-import userBox from "./Components/users/Admin/userBox"
+import UserBox from './Components/users/Admin/Usertab/UserBox'
 import staffBox from './Components/users/Admin/staffBox'
 import paymentBox from './Components/users/Admin/paymentBox'
 import classBox from './Components/users/Admin/classBox'
+import AddUser from './Components/users/Admin/Usertab/AddUser'
 
 const App = () => {
   
@@ -36,7 +37,8 @@ const App = () => {
           <Route path='/admin' exact component={Admin}/>
           <Route path='/activityBox' exact component={activityBox}/>
           <Route path='/childBox' exact component={childBox}/>
-          <Route path='/userBox' exact component={userBox}/>
+          <Route path='/userBox' exact component={UserBox}/>
+          <Route path='/addUser' exact component={AddUser}/>
           <Route path='/staffBox' exact component={staffBox}/>
           <Route path='/classBox' exact component={classBox}/>
           <Route path='/paymentBox' exact component={paymentBox}/>
