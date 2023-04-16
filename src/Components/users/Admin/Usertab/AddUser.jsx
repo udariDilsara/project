@@ -31,7 +31,7 @@ export default function AddUser () {
           address:address
           
           });
-          alert("Employee Registation Successfully");
+          alert("User save Successfully");
  
         } catch (err) {
           alert(err);
@@ -42,6 +42,7 @@ export default function AddUser () {
     return (
         <div className="container">
             <div className="row">
+            <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
             <h2>Add User</h2>
             <form className="register-form" onSubmit={handleSubmit}>
             <label htmlFor="name">First name</label>
@@ -62,13 +63,14 @@ export default function AddUser () {
             <input value={address} name="salary" onChange={(e) => setAddress(e.target.value)} id="address" placeholder="address" class="form-control" />
             <label htmlFor="salary">Salary</label>
             <input value={salary} name="salary" onChange={(e) => setSalary(e.target.value)} id="salary" placeholder="salary" class="form-control" />
-            <button className="btn btn-outline-primary" type="submit" onClick={save}>Submit</button>
-            <Link className="btn btn-outline-danger mx-2" to="/userBox">
-              Cancel
+            <Link to="/userBox"><button className="btn btn-outline-primary" type="submit" onClick={save}>Submit</button></Link>
+            <Link  to="/userBox">
+              <button className="btn btn-outline-danger ">Cancel</button>
             </Link>
-        </form>
+            </form>
+            </div>
         
-    </div>
+         </div>
         </div>
     )
 }

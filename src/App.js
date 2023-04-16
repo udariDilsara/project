@@ -19,6 +19,7 @@ import staffBox from './Components/users/Admin/staffBox'
 import paymentBox from './Components/users/Admin/paymentBox'
 import classBox from './Components/users/Admin/classBox'
 import AddUser from './Components/users/Admin/Usertab/AddUser'
+import ViewUser from './Components/users/Admin/Usertab/ViewUse'
 
 const App = () => {
   
@@ -42,7 +43,7 @@ const App = () => {
           <Route path='/staffBox' exact component={staffBox}/>
           <Route path='/classBox' exact component={classBox}/>
           <Route path='/paymentBox' exact component={paymentBox}/>
-         
+          <Route exact path="/viewuser/:id" element={ViewUser} />
       </Switch>
       <Footer/>
       </Router>
