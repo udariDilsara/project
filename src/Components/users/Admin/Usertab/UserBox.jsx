@@ -57,7 +57,7 @@ export default function UserBox() {
           <td>{user.salary}</td>
           <td>{user.address}</td>
           <td>
-          <Button to={`/viewuser/${user.id}`} >View</Button>&nbsp;
+          
             <Button variant="warning" to={`/edituser/${user.id}`}>Edit</Button>&nbsp;
             <Button variant="danger" className="btn btn-danger mx-2"
                     onClick={() => deleteUser(user.userId)}>Delete</Button>&nbsp;
